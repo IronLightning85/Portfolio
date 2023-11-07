@@ -184,12 +184,17 @@ header
     padding: 0;
 }
 
-.nav__link
+.nav__item
 {
     color: inherit;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
+}
+
+.nav__item a:visited
+{
+    color: var(--clr-light);
 }
 
 .nav__link:hover
@@ -290,6 +295,7 @@ header
     {
         display: grid;
         width: min-content;
+        margin: 0 auto;
         column-gap: 1em;
         grid-template-areas: "img title" "img subtitle";
         grid-template-columns: min-content max-content;
@@ -304,7 +310,7 @@ header
 
     }
 
-    .section__subtitle--intro
+    .section__subtitle--into
     {
         align-self: start;
         grid-column: -1 / 1;
@@ -352,7 +358,7 @@ header
 }
 
 .service{
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -444,6 +450,7 @@ header
 {
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+    
 }
 
 .portfolio__item:focus
